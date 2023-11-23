@@ -9,10 +9,6 @@ For this example we leverage MongoDB [Atlas Search](https://www.mongodb.com/docs
 > You are free to experiment with different models, the main goal of this work was to get something that can run entirely on CPU with the least amount of memory possible. Bigger models will give you way better results. 
 
 
-1. [Compute Vectors](#test1)
-2. [Test 2: Relevant results without manually defining synonyms](#test2)
-3. [Test 3: Multi-Lingual Search](#test3)
-
 <a id="AtlasCluster"></a>
 
 ## Load sample data
