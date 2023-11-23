@@ -21,7 +21,7 @@ text_field_name = "title"
 
 vectorStore = MongoDBAtlasVectorSearch(collection=collection,embedding=embeddings, index_name=index_name, embedding_key=vector_field_name, text_key=text_field_name)
 query = "Give me some movies about race cars"
-#query = "What is the name of the movie where a Paolo Picello is trying to build an AI to answer questions?"
+#query = "What is the name of the movie where Paolo Picello is trying to build an AI to answer questions?"
 
 # Callbacks support token-wise streaming
 callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
