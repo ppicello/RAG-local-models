@@ -69,7 +69,7 @@ This is the fake movie document:
 
 We can then ask the LLM something like: 
 
-> What is the name of the movie where a Paolo Picello is trying to build an AI to answer questions?
+> What is the name of the movie where Paolo Picello is trying to build an AI to answer questions?
 
 ![](/docs/test-rag-fake-movie.gif?raw=true)
 
