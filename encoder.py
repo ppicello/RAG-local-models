@@ -9,8 +9,8 @@ collection = "movies"
 connection = pymongo.MongoClient(mongo_uri)
 collection = connection[db][collection]
 
-# define transofrmer model (from https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
-model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
+# define transofrmer model (from https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 for x in collection.find({'vector': {'$exists': False}}, {}):
     # checking if vector already computed for this doc
