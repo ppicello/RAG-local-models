@@ -46,18 +46,18 @@ Create the following search index on the `sample_mflix.movies` collection:
 <a id="test1"></a>
 ## RAG: Example 1
 
-In this first example we are going to ask our LLM to give suggestions about movies. The app will first compute the vector from the user query, this vector will be used by Atlas Search to identify the most relevant result. These results are then sent to the LLM for the answer generation.
+In this first example we are going to ask our LLM to give suggestions about movies. The app will first compute the vector from the user query, this vector will be used by Atlas Search to identify the most relevant results. These results are then sent to the LLM for the answer generation.
 
 > Give me some movies about race cars
 
 ![](/docs/test-rag.gif?raw=true)
 
-As you can see the system is using the information coming from the Vector Stiore to answer the user question.
+As you can see the system is using the information coming from the Vector Store to answer the user question.
 
 <a id="test2"></a>
 ## RAG: Example 2
 
-In this second example we are going to first of all insert a fake document in our collection, compute the embeddings, and then we are going to ask a question bout this movie to prove that our LLM is actually using the information coming from the Vector Store. 
+In this second example we are going to first of all insert a fake document in our collection, compute the embeddings, and then we are going to ask a question about this movie to prove that our LLM is actually using the information coming from the Vector Store. 
 
 This is the fake movie document: 
 ```json
@@ -73,4 +73,4 @@ We can then ask the LLM something like:
 
 ![](/docs/test-rag-fake-movie.gif?raw=true)
 
-As you can see the system is able to give me the correct name of the movie, even if this movie does not really exist (it was not on the training data for the LLM).
+As you can see the system is able to give me the correct name of the movie, even if this movie does not really exist (it was not in the training data for the LLM).
